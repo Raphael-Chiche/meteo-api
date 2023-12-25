@@ -36,8 +36,13 @@ var callBackGetSuccess = function (data) {
  var imgTemp = document.getElementById("imgTemp");
   temperature.innerHTML = data.main.temp+ " °C";
   ressentie.innerHTML = "Ressenti : " + data.main.feels_like + " °C";
-  temperatureMin.innerHTML = "Min : " + data.main.temp_min + " °C";
-  temperatureMax.innerHTML = "Max : " + data.main.temp_max + " °C";
+
+  // temperatureMin.innerHTML = "Min : " + data.main.temp_min + " °C";
+  // temperatureMax.innerHTML = "Max : " + data.main.temp_max + " °C";
+
+  temperatureMin.innerHTML = data.main.temp_min + " °C";
+  temperatureMax.innerHTML = data.main.temp_max + " °C";
+
   humidite.innerHTML = "Humidité : " + data.main.humidity+ "%";
   ville.innerHTML =data.name;
 
@@ -49,4 +54,6 @@ var callBackGetSuccess = function (data) {
     imgTemp.src = "images/soleil.png";
   }
 };
+
+// -------------------------------
 
