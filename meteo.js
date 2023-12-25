@@ -36,9 +36,9 @@ var callBackGetSuccess = function (data) {
  var imgTemp = document.getElementById("imgTemp");
   temperature.innerHTML = data.main.temp;
   ressentie.innerHTML = "Ressenti : " + data.main.feels_like;
-  temperatureMin.innerHTML = "Min : " + data.main.temp_min;
-  temperatureMax.innerHTML = "Max : " + data.main.temp_max;
-  humidite.innerHTML = "Humidité : " + data.main.humidity;
+  temperatureMin.innerHTML = "Min : " + data.main.temp_min+"°C";
+  temperatureMax.innerHTML = "Max : " + data.main.temp_max+"°C";
+  humidite.innerHTML = "Humidité : " + data.main.humidity + "%";
   ville.innerHTML =data.name;
 
   if (data.main.temp < 10) {
