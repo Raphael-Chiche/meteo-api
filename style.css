@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* :root{
+    --dark-blue: #007bff;
+    --light-blue: #00aaff;
+    --dark-grey: #343a40;
+    --medium-blue: #007bff;
+
+} */
+
+/* Path: style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #051923;
+  color: white;
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+.content {
+  border-radius: 26px;
+  background: linear-gradient(90deg, rgba(0, 100, 148, 0.5) 0%, #003554 100%);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 60%;
+  font-family: "Oswald", sans-serif;
+}
+
+.left {
+  border-radius: 26px 0px 0px 26px;
+  background: linear-gradient(90deg, #0467a0 0%, rgba(5, 130, 202, 0) 100%);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 2rem;
+  justify-content: space-around;
+}
+
+.Icon {
+  min-width: 46px;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 12px;
+  background-color: #e3edf7;
+}
+
+.Icon:hover {
+    transition: 0.5s ease-in-out;
+  background-color: #a3bfd8;
+}
+.InputContainer {
+  width: 100%;
+}
+
+input {
+  background-color: #e3edf7;
+  padding: 16px 32px;
+  border: none;
+  display: block;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 600;
+  transition: all 240ms ease-out;
+  width: 100%;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.568);
+}
+
+input:focus {
+  outline: none;
+  background-color: #a3bfd8;
+  color: black;
+}
+.searchBtns {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.left #temperature{
+    font-size: 4rem;
+}
+
+.left #ville{
+    font-size: 2rem;
+}
+
+.temperatureVille{
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 30%;
+    text-align: center;
+}
+
+.imgTemperature{
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgTemperature img{
+    width: 70%;
+}

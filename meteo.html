@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tuto Meteo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="meteo.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="left">
+        <div class="imgTemperature">
+          <img id="imgTemp" src="" alt="" />
+        </div>
+
+        <div class="temperatureVille">
+          <p id="temperature">temperature</p>
+          <p id="ville">Ville</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="search">
+          <label for="search-ville">Changer de ville:</label>
+          <div class="searchBtns">
+            <div
+              class="Icon"
+              onclick="buttonClickGET(document.getElementById('search-ville').value)"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#657789"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-search"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+            <div class="InputContainer">
+              <input placeholder="" id="search-ville" />
+            </div>
+          </div>
+        </div>
+        <p id="ressenti">ressenti</p>
+        <p id="temperatureMin">temperature min</p>
+        <p id="temperatureMax">temperature max</p>
+        <p id="humidite">Humidité</p>
+      </div>
+    </div>
+  </body>
+</html>
