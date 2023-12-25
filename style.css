@@ -39,17 +39,24 @@ body {
 }
 
 .left {
-  border-radius: 26px 0px 0px 26px;
-  background: linear-gradient(90deg, #0467a0 0%, rgba(5, 130, 202, 0) 100%);
+  border-radius: 26px;
+  /* background: linear-gradient(90deg, #0467a0 0%, rgba(5, 130, 202, 0) 100%); */
+  background-color: rgba(255, 255, 255, 0.295);
   width: 50%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column;  
   padding: 3rem;
+  perspective: 1500px;
+  transform:  rotate(0);
 }
 
+.left:hover {
+  transform: rotateX(-10deg) rotateY(-23deg) rotateZ(0deg);
+  transition: .3s;
+}
 .right {
   width: 50%;
   height: 100%;

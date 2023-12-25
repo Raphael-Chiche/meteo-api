@@ -34,11 +34,11 @@ var callBackGetSuccess = function (data) {
   var humidite = document.getElementById("humidite");
   var ville = document.getElementById("ville");
  var imgTemp = document.getElementById("imgTemp");
-  temperature.innerHTML = data.main.temp + "°C";
-  ressentie.innerHTML = "Ressenti : " + data.main.feels_like + "°C";
-  temperatureMin.innerHTML = "Min : " + data.main.temp_min+"°C";
-  temperatureMax.innerHTML = "Max : " + data.main.temp_max+"°C";
-  humidite.innerHTML = "Humidité : " + data.main.humidity + "%";
+  temperature.innerHTML = data.main.temp+ " °C";
+  ressentie.innerHTML = "Ressenti : " + data.main.feels_like + " °C";
+  temperatureMin.innerHTML = "Min : " + data.main.temp_min + " °C";
+  temperatureMax.innerHTML = "Max : " + data.main.temp_max + " °C";
+  humidite.innerHTML = "Humidité : " + data.main.humidity+ "%";
   ville.innerHTML =data.name;
 
   if (data.main.temp < 10) {
@@ -49,3 +49,4 @@ var callBackGetSuccess = function (data) {
     imgTemp.src = "images/soleil.png";
   }
 };
+
